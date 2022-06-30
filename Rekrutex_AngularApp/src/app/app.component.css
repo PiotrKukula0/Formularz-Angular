@@ -1,0 +1,85 @@
+aside {
+  width: 20%;
+  background: var(--content-bkg);
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+.aside-wrapper {
+  padding: 0px 0px;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo {
+  width: 105%;
+  line-height: 50px;
+  font-size: 32px;
+  color: var(--main-div-bkg);
+  background: var(--header-bkg);
+  padding: 0px 10px;
+  position: static;
+  cursor: pointer;
+}
+
+aside ul {
+  padding-inline-start: 0;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: #000000;
+}
+
+aside ul li {
+  list-style: none;
+  font-size: 20px;
+  padding: 20px 10px;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  border-color: #000000;
+  cursor: pointer;
+}
+
+a:link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:active {color: black;}
+
+a:visited {
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--white-text);
+}
+
+input {
+  display: none;
+}
+
+#logout:hover {
+  color: var(--white-text) !important;
+} 
+
+/* Toggler Functionality */
+input:checked ~ aside {
+  left: -20%;
+}
+
+.styleButton {
+  top:5px;
+  margin-right: 2%;
+  float: right;
+  position: sticky;
+  color: var(--white-text);
+  height: 50px;
+  width: 150px;
+  font-size: 20px;
+  border: 5px double rgba(var(--main-div-bkg-rgb), 0.7);
+  border-radius: 10px; 
+  background-color: var(--content-bkg);
+}

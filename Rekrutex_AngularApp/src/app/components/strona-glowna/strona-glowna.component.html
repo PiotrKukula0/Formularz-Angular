@@ -1,0 +1,45 @@
+<div class="main-div" align="center">
+  <div class="okno_tlo" id="glowna_tlo">
+    <div class="okno_cialo" id="glowna_cialo">
+      
+      <div class="naglowek_tlo" id="glowna_naglowek_tlo">
+        <div class="naglowek_cialo" id="glowna_naglowek_cialo">
+          <h1>REKRUTEX</h1>
+        </div>
+      </div>
+      
+      <br>
+      <br />
+
+          <h3>
+            Rozwiąż quiz i tak się nie dostaniesz!<br>
+            <br>
+            Możliwość wysłania CV tylko dla wybranych!
+          </h3>
+
+      <br>
+      <br />
+
+      <div *ngIf="isUser==false" class="przycisk_tlo" id="glowna_submit_tlo_left">
+        <div class="przycisk_cialo" id="glowna_submit_cialo">
+          <input type="submit" id="glowna_zaloguj">
+          <label for="glowna_zaloguj"><a routerLink="/logowanie" routerLinkActive="active">Zaloguj się</a></label>
+        </div>
+      </div>
+	  
+	  <div *ngIf="isUser==false" class="przycisk_tlo" id="glowna_submit_tlo_right">
+        <div class="przycisk_cialo" id="glowna_submit_cialo">
+          <input type="submit" id="glowna_rejestruj">
+          <label for="glowna_rejestruj"><a routerLink="/rejestracja" routerLinkActive="active">Zarejestruj się</a></label>
+        </div>
+      </div>
+
+    <div *ngIf="isUser==true" align="center">
+      <h3 align="center">Przejdź do kategorii dostępnych stanowisk i quizu:</h3><br>
+      <button align="center" class="mainButton"><a routerLink="/kategorie" routerLinkActive="active">Kategorie</a></button><br>
+    </div>
+  
+  
+    </div>
+  </div>
+</div>

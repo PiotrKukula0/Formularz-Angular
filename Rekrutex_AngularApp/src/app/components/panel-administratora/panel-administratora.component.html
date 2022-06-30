@@ -1,0 +1,33 @@
+<br>
+<div class="main-div" align="center">
+    <br>
+    <div class="panel-header" align="center"><h1>Panel Administratora</h1><hr></div>
+    <br>
+    <ul>
+        <li id="jeden" (click)="tabChange('jeden')">jeden</li>
+        <li id="dwa" (click)="tabChange('dwa')">dwa</li>
+    </ul>
+    <div>
+        <div class="content-value" *ngIf="id === 'jeden'">
+            <div class="zakladka-dodaj" align="center">
+                <button>Dodaj</button>
+            </div>
+        </div>
+        <div class="content-value" *ngIf="id === 'dwa'">
+            <div class="zakladka-usun" align="center">
+                <button>Usuń</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<h1>Pomysły:</h1>
+<div>
+    <ol>
+        <li>Dodanie pytania do wybranej kategorii</li>
+        <li>Usunięcie pytania z wybranej kategorii</li>
+        <li>Wyświetlenie wszystkich pytań z danej kategorii (z odpowiedziami)</li>
+        <li>Wyświetlenie użytkowników (ile uzyskał punktów)</li>
+    </ol>
+</div>
